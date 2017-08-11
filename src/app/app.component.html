@@ -1,0 +1,67 @@
+<div>
+  <md-sidenav-container>
+    <md-sidenav #sidenav mode="side" class="app-sidenav" layout-fill>
+      <md-nav-list >
+        <a md-list-item href="page1.html">Page 1</a>
+        <a md-list-item href="page2.html">Page 2</a>
+        <a md-list-item href="page3.html">Page 3</a>
+        <a md-list-item href="page1.html">Page 1</a>
+        <a md-list-item href="page2.html">Page 2</a>
+        <a md-list-item href="page3.html">Page 3</a>
+        <a md-list-item href="page1.html">Page 1</a>
+        <a md-list-item href="page2.html">Page 2</a>
+        <a md-list-item href="page3.html">Page 3</a>
+             <a md-list-item href="page1.html">Page 1</a>
+        <a md-list-item href="page2.html">Page 2</a>
+        <a md-list-item href="page3.html">Page 3</a>
+      </md-nav-list>
+    </md-sidenav>
+
+    <md-toolbar color="primary">
+      <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon class="md-24" >menu</md-icon>
+    </button>￼
+      <span>Yay, Material in Angular 2!</span>
+
+      <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>more_vert</md-icon>
+    </button>
+    </md-toolbar>
+
+    <md-menu x-position="before" #menu="mdMenu">
+      <button md-menu-item>Option 1</button>
+      <button md-menu-item>Option 2</button>
+    </md-menu>
+
+    <md-card>
+      <button md-button>All</button>
+      <button md-raised-button>Of</button>
+      <button md-raised-button color="primary">The</button>
+      <button md-raised-button color="accent">Buttons</button>
+    </md-card>
+
+    <md-card>
+      <button md-button>All</button>
+      <button md-raised-button>Of</button>
+      <button md-raised-button color="primary">The</button>
+      <button md-raised-button color="accent">Buttons</button>
+    </md-card>
+    <md-card>
+      <button md-button>All</button>
+      <button md-raised-button>Of</button>
+      <button md-raised-button color="primary">The</button>
+      <button md-raised-button color="accent">Buttons</button>
+    </md-card>
+    <md-card>
+      <button md-button>All</button>
+      <button md-raised-button>Of</button>
+      <button md-raised-button color="primary">The</button>
+      <button md-raised-button color="accent">Buttons</button>
+    </md-card>
+    <span class="done">
+    <button md-fab>
+      <md-icon>check circle</md-icon>
+    </button>
+  </span>
+  </md-sidenav-container>
+</div>
