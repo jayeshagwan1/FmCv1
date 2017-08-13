@@ -1,0 +1,580 @@
+<div>
+    <md-sidenav-container>
+        <md-sidenav #sidenav mode="side">
+
+            <md-toolbar>
+                <span>First Row</span>
+                <md-toolbar-row>
+                    <span>Second Row</span>
+                </md-toolbar-row>
+                <md-toolbar-row>
+                    <span>Third Row</span>
+                </md-toolbar-row>
+            </md-toolbar>
+
+        </md-sidenav>
+
+        <md-toolbar color="primary">
+            <button md-icon-button (click)="sidenav.toggle()">
+      <md-icon class="md-24">menu</md-icon>
+            <span>Find My Cook</span>
+    </button>￼
+
+            <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>more_vert</md-icon>
+    </button>
+        </md-toolbar>
+
+        <md-menu x-position="before" #menu="mdMenu">
+            <button md-menu-item>
+        <span>Settings</span>
+         <md-icon>settings</md-icon>         
+        </button>
+            <button md-menu-item (click)="logout()">
+        <span>Logout</span>
+        <md-icon>power_settings_new</md-icon>
+        </button>
+        </md-menu>
+
+        <!-- <md-grid-list cols="2" rowHeight="4:2"onclick="alert('Do you really wanna Logout ??')">
+      <md-grid-tile>
+ 
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-header" data-background-color="orange">
+                <i class="material-icons">content_copy</i>
+              </div>
+              <div class="card-content">
+                <p class="category">Used Space</p>
+                <h3 class="title">49/50<small>GB</small></h3>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      </md-grid-tile>
+      <md-grid-tile>
+        <md-card>
+          <button md-button>All</button>
+          <button md-raised-button>Of</button>
+          <button md-raised-button color="primary">The</button>
+          <button md-raised-button color="accent">Buttons</button>
+        </md-card>
+      </md-grid-tile>
+      <md-grid-tile>3</md-grid-tile>
+      <md-grid-tile>4</md-grid-tile>
+    </md-grid-list> -->
+        <!-- <div class="wrapper">
+
+
+
+      <div class="main-panel">
+
+
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header" data-background-color="orange">
+                    <i class="material-icons">content_copy</i>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">Used Space</p>
+                    <h3 class="title">49/50<small>GB</small></h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header" data-background-color="green">
+                    <i class="material-icons">store</i>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">Revenue</p>
+                    <h3 class="title">$34,245</h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="material-icons">date_range</i> Last 24 Hours
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header" data-background-color="red">
+                    <i class="material-icons">info_outline</i>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">Fixed Issues</p>
+                    <h3 class="title">75</h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="material-icons">local_offer</i> Tracked from Github
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                  <div class="card-header" data-background-color="blue">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                  <div class="card-content">
+                    <p class="category">Followers</p>
+                    <h3 class="title">+245</h3>
+                  </div>
+                  <div class="card-footer">
+                    <div class="stats">
+                      <i class="material-icons">update</i> Just Updated
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <nav class="pull-left">
+              <ul>
+                <li>
+                  <a href="#">
+									Home
+								</a>
+                </li>
+                <li>
+                  <a href="#">
+									Company
+								</a>
+                </li>
+                <li>
+                  <a href="#">
+									Portfolio
+								</a>
+                </li>
+                <li>
+                  <a href="#">
+								   Blog
+								</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="copyright pull-right">
+              ©            
+              <script>
+                document.write(new Date().getFullYear())
+              </script>2017 <a href="http://www.eurekalabs.com">EurekaLabs</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div> -->
+        <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-warning text-center">
+                                    <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">                                    
+                                    Ram
+                                    <p>North Indian, Chinese </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-reload"></i> Updated now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-success text-center">
+                                  <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                  Naresh  
+                                  <p>North Indian, Bengali, Assami</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-calendar"></i> Last day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-danger text-center">
+                                   <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                  Sudarshan  
+                                  <p>Chinese, Continental</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-timer"></i> In the last hour
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-info text-center">
+                                    <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                  Laxmi  
+                                  <p>North Indian, South Indian, Assamese, Oriya</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-reload"></i> Updated now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-warning text-center">
+                                    <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Capacity</p>
+                                    105GB
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-reload"></i> Updated now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-success text-center">
+                                  <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Revenue</p>
+                                    $1,345
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-calendar"></i> Last day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-danger text-center">
+                                   <i class="material-icons iconsizefmc">person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Errors</p>
+                                    23
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-timer"></i> In the last hour
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-info text-center">
+                                    <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Followers</p>
+                                    +45
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-reload"></i> Updated now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-warning text-center">
+                                    <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Capacity</p>
+                                    105GB
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-reload"></i> Updated now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-success text-center">
+                                  <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Revenue</p>
+                                    $1,345
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-calendar"></i> Last day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-danger text-center">
+                                   <i class="material-icons iconsizefmc">person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Errors</p>
+                                    23
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-timer"></i> In the last hour
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <div class="icon-big icon-info text-center">
+                                    <i class="material-icons iconsizefmc" >person</i>
+                                </div>
+                            </div>
+                            <div class="col-xs-7">
+                                <div class="numbers">
+                                    <p>Followers</p>
+                                    +45
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <hr>
+                            <div class="stats">
+                                <i class="ti-reload"></i> Updated now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+        <!-- <md-grid-list cols="4" rowHeight="100px">
+  <md-grid-tile 
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </md-grid-tile>
+</md-grid-list> -->
+
+        <md-grid-list cols="2" rowHeight="2:1">
+            <md-grid-tile>
+                <md-card class="example-card">
+                    <md-card-header>
+                        <div md-card-avatar class="example-header-image"></div>
+                        <md-card-title>Shibu</md-card-title>
+                        <md-card-subtitle>Bengali</md-card-subtitle>
+                    </md-card-header>
+                    <md-card-content>
+                        <p>Cooking Experience: 5 years</p>
+                        <p>Speciality: North Indian, Chinese, Bengali,Oriya</p>
+                    </md-card-content>
+                    <md-card-actions>
+                        <button md-raised-button color="primary">Contact</button>
+                        <button md-raised-button color="primary">Leave Message</button>
+                    </md-card-actions>
+                </md-card>
+            </md-grid-tile>
+            <md-grid-tile>
+                <md-card class="example-card">
+                    <md-card-header>
+                        <div md-card-avatar class="example-header-image"></div>
+                        <md-card-title>Laxmi</md-card-title>
+                        <md-card-subtitle>Oriya</md-card-subtitle>
+                    </md-card-header>
+                    <md-card-content>
+                        <p>Cooking Experience: 8 years</p>
+                        <p>Speciality: North Indian, Chinese, Bengali,Oriya, South India</p>
+                    </md-card-content>
+                    <md-card-actions>
+                        <button md-raised-button color="primary">Contact</button>
+                        <button md-raised-button color="primary">Leave Message</button>
+                    </md-card-actions>
+                </md-card>
+            </md-grid-tile>
+            <md-grid-tile>
+                <md-card class="example-card">
+                    <md-card-header>
+                        <div md-card-avatar class="example-header-image"></div>
+                        <md-card-title>Sudarshan</md-card-title>
+                        <md-card-subtitle>Bihari</md-card-subtitle>
+                    </md-card-header>
+                    <md-card-content>
+                        <p>Cooking Experience: 6 years</p>
+                        <p>Speciality: North Indian,Rajasthani</p>
+                    </md-card-content>
+                    <md-card-actions>
+                        <button md-raised-button color="primary">Contact</button>
+                        <button md-raised-button color="primary">Leave Message</button>
+                    </md-card-actions>
+                </md-card>
+            </md-grid-tile>
+            <md-grid-tile>
+                <md-card class="example-card">
+                    <md-card-header>
+                        <div md-card-avatar class="example-header-image"></div>
+                        <md-card-title>Chandu</md-card-title>
+                        <md-card-subtitle>Marathi</md-card-subtitle>
+                    </md-card-header>
+                    <md-card-content>
+                        <p>Cooking Experience: 4 years</p>
+                        <p>Speciality: Maharashtrian,North Indian, Chinese</p>
+                    </md-card-content>
+                    <md-card-actions>
+                        <button md-raised-button color="primary">Contact</button>
+                        <button md-raised-button color="primary">Leave Message</button>
+                    </md-card-actions>
+                </md-card>
+            </md-grid-tile>
+        </md-grid-list>
+    </md-sidenav-container>
+</div>
